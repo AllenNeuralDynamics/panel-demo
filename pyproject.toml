@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "panel-demo"
-description = "Generated from aind-library-template"
+description = "Demonstration of a Panel app"
 license = {text = "MIT"}
 requires-python = ">=3.10"
 authors = [
@@ -17,6 +17,9 @@ readme = "README.md"
 dynamic = ["version"]
 
 dependencies = [
+    'panel',
+    'altair',
+    'aind-data-access-api[docdb]',
 ]
 
 [project.optional-dependencies]
